@@ -6,9 +6,9 @@ public class Teste {
 		CalculaPagamento calcula = new CalculaPagamento();
 		Funcionario funcionario = new Funcionario();
 		
-		funcionario.horasTrabalhadas = 40;
-		funcionario.numDependentes = 1;
-		funcionario.salarioHora = 10;
+		funcionario.setHorasTrabalhadas(40);
+		funcionario.setNumDependentes(1);
+		funcionario.setSalarioHora(10);
 		
 		System.out.println("Salário bruto: R$" + calcula.calcSalarioBruto(funcionario));
 		System.out.println("Desconto INSS: R$" + calcula.calcDescontoINSS(funcionario));

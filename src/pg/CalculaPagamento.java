@@ -3,7 +3,7 @@ package pg;
 public class CalculaPagamento {
 	
 	public double calcSalarioBruto(Funcionario funcionario) {
-		return funcionario.horasTrabalhadas * funcionario.salarioHora + (50 * funcionario.numDependentes);
+		return funcionario.getHorasTrabalhadas() * funcionario.getSalarioHora() + (50 * funcionario.getNumDependentes());
 	}
 	
 	public double calcDescontoINSS(Funcionario funcionario) {
